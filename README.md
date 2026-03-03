@@ -26,7 +26,7 @@ Unlike standard classification models, Sentinel-Grid uses an Unsupervised Autoen
 **Mathematical Verification**
 The system calculates the Reconstruction Loss ($MSE$) to determine the verdict:
 
-<img width="1908" height="522" alt="e6eb725a-e263-4dd0-aa80-7312d699a275" src="https://github.com/user-attachments/assets/53aabfec-f330-4933-8567-59f56e76fd8b" />
+<img width="227" height="80" alt="image" src="https://github.com/user-attachments/assets/53b07753-43ce-4d20-bbac-35c2167ee304" />
 
 If $MSE > Threshold$ (0.02), a RED ALERT is dispatched.
 
@@ -49,10 +49,12 @@ Backend & AI (Python Engine)
 - Phase 1: Baseline Maintenance
 When the machine operates within healthy parameters, the AI successfully reconstructs the signal with minimal error (~0.0009).
 
-<img width="1866" height="657" alt="ef03e720-deb2-4bc5-92b2-1839864d1f89" src="https://github.com/user-attachments/assets/cfba00b2-93cd-4e97-8d3e-8e9e2cb26a50" />
+<img width="1908" height="522" alt="e6eb725a-e263-4dd0-aa80-7312d699a275" src="https://github.com/user-attachments/assets/53aabfec-f330-4933-8567-59f56e76fd8b" />
 
 - Phase 2: Anomaly Detection
 When an external acoustic intruder or machine fault is introduced, the MSE score jumps by over 40x (e.g., 0.041), triggering the autonomous alert system.
+
+<img width="1866" height="657" alt="ef03e720-deb2-4bc5-92b2-1839864d1f89" src="https://github.com/user-attachments/assets/cfba00b2-93cd-4e97-8d3e-8e9e2cb26a50" />
 
 -----------------------------------------------------------------------------------------
 
