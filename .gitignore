@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# AI Models & Data
+models/*.pth
+models/*.npy
+data/*.wav
+
+# Shared data (Mock Cloud)
+shared/alerts.json
+
+# Web / Next.js
+dashboard/.next/
+dashboard/node_modules/
+.DS_Store
